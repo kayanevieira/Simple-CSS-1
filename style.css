@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    min-height: 5em;
+    border: 1px solid var(--light-blue);
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style: none;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+a:hover{
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.content-1{
+    min-height: 350px;
+    height: auto;
+    width: 38%;
+    background-color: var(--background);
+    border: 1px solid var(--dark-blue);
+    margin-bottom: 22%;
+}
+
+.content-2{
+    min-height: 500px;
+    height: auto;
+    width: 60%;
+    background-color: var(--background);
+    border: 1px solid var(--dark-blue);
+    margin-bottom: 22%;
+    
+}
+
+.content-1-items{
+    display: flex;
+    justify-content: center;
+}
+
+.content-2-items{
+    display: flex;
+    justify-content: center;
+}
+
+.h2-cidade-rock{
+    margin-top: 14px;
+    color:var(--dark-blue);
+    letter-spacing: 1px;
+}
+
+
+.h2-valores{
+    margin-top: 14px;
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+}
+
+img{
+    margin-top: 10px;
+    margin-right: 10px;
+    height:  30px;
+}
+
+p{
+    margin-top: 15px;
+    letter-spacing: 1.5px;
+}
+
+.container-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+footer{
+    position: fixed;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--grey);
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 320px){
+    .container-p {
+      font-size: 10px;
+    }
+
+    img{
+        height: 20px;
+        margin: 0 auto;
+    }
+  }
+
