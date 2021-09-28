@@ -58,12 +58,12 @@ ul{
   background-color: var(--background);
   border: 1px solid var(--dark-blue);
   overflow: auto;
-
 }
-/* set an unique class to our side menu */
+
 .content-icon-1 {
   width: 30px;
 }
+
 .content-2 {
   min-height: 500px;
   padding: 15px;
@@ -76,14 +76,13 @@ ul{
 
 .content-1-items {
   display: flex;
-  /* justify-content: center; */
 }
 
 .content-2-items {
   display: flex;
   justify-content: center;
 }
-/* set width in relative unity */
+
 .h2-cidade-rock {
   margin-top: 14px;
   color: var(--dark-blue);
@@ -103,7 +102,6 @@ img {
   height: 30px;
 }
 
-/* set width in relative unity */
 p {
   margin-top: 15px;
   letter-spacing: 1.5px;
@@ -129,8 +127,6 @@ footer {
   align-items: center;
   font: 14px;
 }
-
-
 
 .content-icon-1 {
   width: 30px;
@@ -174,10 +170,6 @@ footer {
   align-items: center;
 }
 
-#button-open{
-  position: absolute;
-  z-index: 2;
-}
 
 .modal {
   display: none;
@@ -206,6 +198,24 @@ footer {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#button-open{
+  margin-top: 20px;
+  width: 8em;
+  height: 3em;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--grey);
+}
+
+#button-clique{
+  margin-top: 80px;
+  width: 8em;
+  height: 3em;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--grey);
 }
 
 @media only screen and (max-width: 320px) {
