@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="var.css" />
     <title>Document</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -16,12 +16,18 @@
           <li><a href="#">LINE-UP</a></li>
           <li><a href="#">Ingressos</a></li>
         </ul>
+        <button onclick="transition(event)" id="button-clique">
+          Clique
+      </button>
       </nav>
     </header>
-    <div class="container">
-      <div class="content-1">
+
+    <button id="button-open" onclick="openModal()">Clique para abrir</button>
+
+    <div class="container" id="container">
+      <div class="content-1" id="content-1">
         <div class="content-1-items">
-          <img src="hand.png" alt="ícone-rock" />
+          <img src="hand.png" alt="ícone-rock" class="content-icon-1" />
           <h2 class="h2-cidade-rock">Cidade do Rock</h2>
         </div>
         <div class="container-p">
@@ -40,7 +46,7 @@
         </div>
       </div>
 
-      <div class="content-2">
+      <div class="content-2" id="content-2">
         <div class="content-2-items">
           <img src="hand.png" height="30px" alt="ícone-rock" />
           <h2 class="h2-valores">Valores</h2>
@@ -60,7 +66,24 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="content-footer">
+        <p>Telefone: (51)983492381</p>
+        <p>Facebook: Kayane Vieira</p>
+        <p>Instagram: @vieirakay</p>
+      </div>
+      <div class="content2-footer">
+        <p id="p-footer">lorem ipsun doler</p>
+      </div>
+    </footer>
+    <div id="modal" class="modal">
 
-    <footer></footer>
+      <div class="modal-content">
+        <span class="close" id="close" onclick="closeModal()">&times;</span>
+        <p>Algum texto...</p>
+      </div>
+
+
+    
   </body>
 </html>
